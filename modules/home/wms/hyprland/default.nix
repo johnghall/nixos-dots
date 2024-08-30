@@ -214,6 +214,8 @@ in {
         "maxsize 1 1,class:^(xwaylandvideobridge)$"
         "noblur,class:^(xwaylandvideobridge)$"
       ];
+
+      monitor = ["HDMI-A-1,5120x1440@240,2560x0,1,bitdepth,10" "DP-2,2560x1440@144,0x0,1" "DP-1,disable"];
     };
 
     # fake a tray to let apps start

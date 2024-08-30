@@ -25,7 +25,7 @@ in {
         settings = rec {
           initial_session = {
             command = "Hyprland";
-            user = "zoey";
+            user = "john";
           };
           default_session = initial_session;
         };
@@ -51,7 +51,7 @@ in {
         WLR_RENDERER = "wayland";
         XDG_SESSION_TYPE = "wayland";
         SDL_VIDEODRIVER = "wayland";
-        XDG_CACHE_HOME = "/home/zoey/.cache";
+        XDG_CACHE_HOME = "/home/john/.cache";
         CLUTTER_BACKEND = "wayland";
         DEFAULT_BROWSER = "${pkgs.firefox}/bin/firefox";
       };

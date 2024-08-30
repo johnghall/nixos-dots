@@ -28,5 +28,5 @@
     };
   };
 
-  wallpaper = ./wallpaper.png;
+  wallpaper = ./cat_wall.jpg;
 }

@@ -12,7 +12,7 @@ in {
   options.apps.tools.git = with types; {
     enable = mkBoolOpt false "Enable Git Integration";
 
-    signByDefault = mkBoolOpt true "Sign by default";
+    signByDefault = mkBoolOpt false "Sign by default";
     signingKey = mkStringOpt "5F873416BCF59F35" "The KeyID of your GPG signingKey";
   };
 
@@ -20,8 +20,8 @@ in {
     home.packages = with pkgs; [zsh-forgit gitflow];
     programs.git = {
       enable = true;
-      userName = "zack";
-      userEmail = "hi@zoeys.computer";
+      userName = "johnghall";
+      userEmail = "johngradyh@gmail.com";
       ignores = [
         ".cache/"
         ".DS_Store"

@@ -20,7 +20,6 @@ with lib.custom; let
   mod = "SUPER";
   modshift = "${mod}SHIFT";
 
-  # binds $mod + [shift +] {1..10} to [move to] workspace {1..10} (stolen from fufie)
   workspaces = builtins.concatLists (builtins.genList (
       x: let
         ws = let
@@ -61,7 +60,7 @@ in {
         "${pkgs.librewolf}/bin/librewolf"
         "telegram"
         "thunderbird"
-        "vesktop"
+        "vestop"
         "spotify"
         "slack"
       ];
@@ -169,8 +168,6 @@ in {
       xwayland = {
         force_zero_scaling = true;
       };
-
-      monitor = ["DP-1,2560x1440@240,0x0,1,bitdepth,10" "HDMI-A-1,disable"];
 
       layerrule = [
         "blur, ^(gtk-layer-shell)$"

@@ -10,6 +10,11 @@
 
   hardware.audio.enable = true;
   hardware.nvidia.enable = true; # Enable if you have a nvidia GPU
+  hardware.bluetooth.enable = true;
+  hardware.bluetooth.powerOnBoot = true;
+
+  services.blueman.enable = true;
+
   ui.fonts.enable = true;
 
   protocols.wayland.enable = true;
@@ -32,13 +37,20 @@
   time.timeZone = "America/Detroit"; # Change to your TZ
 
   programs.zsh.enable = true;
+
+  programs.steam.enable = true;
+  programs.steam.gamescopeSession.enable = true;
+  programs.gamemode.enable = true;
+
   # REMEMBER TO CHANGE TO YOUR USERNAME
   users.users.john = {
     isNormalUser = true;
     description = "john";
-    extraGroups = ["networkmanager" "wheel"];
+    extraGroups = ["networkmanager" "wheel" "docker"];
     shell = pkgs.zsh;
   };
+
+  virtualisation.docker.enable = true;
 
   # CHANGE USERNAME HERE TOO
   snowfallorg.users.john = {

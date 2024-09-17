@@ -111,9 +111,6 @@ in {
         # border thiccness
         border_size = 2;
 
-        # whether to apply the sensitivity to raw input (e.g. used by games where you aim using your mouse)
-        apply_sens_to_raw = 0;
-
         # active border color
         "col.active_border" = "rgb(${rose})";
         "col.inactive_border" = "rgb(${muted})";
@@ -215,7 +212,7 @@ in {
         "noblur,class:^(xwaylandvideobridge)$"
       ];
 
-      monitor = ["HDMI-A-1,5120x1440@240,2560x0,1,bitdepth,10" "DP-2,2560x1440@144,0x0,1" "DP-1,disable"];
+      monitor = ["DP-2,2560x1440@144,0x0,1" "HDMI-A-1,2560x1440@120,2560x0,1,bitdepth,10" "DP-1,2560x1440@120,5120x0,1,bitdepth,10"];
     };
 
     # fake a tray to let apps start
